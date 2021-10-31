@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC859623272E686E001BB9D8 /* WelcomePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC859622272E686E001BB9D8 /* WelcomePageVC.swift */; };
+		BC859625272E6CB9001BB9D8 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC859624272E6CB9001BB9D8 /* HomeVC.swift */; };
 		BCD303E8272D740F00250513 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD303E7272D740F00250513 /* AppDelegate.swift */; };
 		BCD303EA272D740F00250513 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD303E9272D740F00250513 /* SceneDelegate.swift */; };
-		BCD303EC272D740F00250513 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD303EB272D740F00250513 /* ViewController.swift */; };
 		BCD303EF272D740F00250513 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCD303ED272D740F00250513 /* Main.storyboard */; };
 		BCD303F2272D740F00250513 /* WeatherStories.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BCD303F0272D740F00250513 /* WeatherStories.xcdatamodeld */; };
 		BCD303F4272D741000250513 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCD303F3272D741000250513 /* Assets.xcassets */; };
@@ -17,10 +18,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BC859622272E686E001BB9D8 /* WelcomePageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePageVC.swift; sourceTree = "<group>"; };
+		BC859624272E6CB9001BB9D8 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		BCD303E4272D740F00250513 /* WeatherStories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherStories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCD303E7272D740F00250513 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCD303E9272D740F00250513 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BCD303EB272D740F00250513 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BCD303EE272D740F00250513 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BCD303F1272D740F00250513 /* WeatherStories.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WeatherStories.xcdatamodel; sourceTree = "<group>"; };
 		BCD303F3272D741000250513 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -39,6 +41,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC859626272E6CC2001BB9D8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BC859624272E6CB9001BB9D8 /* HomeVC.swift */,
+				BC859622272E686E001BB9D8 /* WelcomePageVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		BCD303DB272D740F00250513 = {
 			isa = PBXGroup;
 			children = (
@@ -60,8 +71,8 @@
 			children = (
 				BCD303E7272D740F00250513 /* AppDelegate.swift */,
 				BCD303E9272D740F00250513 /* SceneDelegate.swift */,
-				BCD303EB272D740F00250513 /* ViewController.swift */,
 				BCD303ED272D740F00250513 /* Main.storyboard */,
+				BC859626272E6CC2001BB9D8 /* Controllers */,
 				BCD303F3272D741000250513 /* Assets.xcassets */,
 				BCD303F5272D741000250513 /* LaunchScreen.storyboard */,
 				BCD303F8272D741000250513 /* Info.plist */,
@@ -141,8 +152,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC859623272E686E001BB9D8 /* WelcomePageVC.swift in Sources */,
+				BC859625272E6CB9001BB9D8 /* HomeVC.swift in Sources */,
 				BCD303F2272D740F00250513 /* WeatherStories.xcdatamodeld in Sources */,
-				BCD303EC272D740F00250513 /* ViewController.swift in Sources */,
 				BCD303E8272D740F00250513 /* AppDelegate.swift in Sources */,
 				BCD303EA272D740F00250513 /* SceneDelegate.swift in Sources */,
 			);

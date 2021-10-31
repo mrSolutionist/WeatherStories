@@ -1,19 +1,18 @@
 //
-//  ViewController.swift
+//  HomeVC.swift
 //  WeatherStories
 //
-//  Created by Robin George on 30/10/21.
+//  Created by Robin George on 31/10/21.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class HomeVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
-
-
+    
 }
-
