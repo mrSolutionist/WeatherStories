@@ -6,13 +6,51 @@
 //
 
 import UIKit
+import CoreLocation
 
-class HomeVC: UIViewController {
+
+//protocol for passing current VC (HOMEVC) obj to locationManagerDelegate
+//this passes the obj of HOMEVC
+protocol HomeDelegate{
+    func homeDelegate(obj:HomeVC)
+}
+
+class HomeVC: UIViewController,CLLocationManagerDelegate{
+    
+    
+ 
+    @IBOutlet weak var placeLabel: UILabel!
+    @IBOutlet weak var tempLabel: UILabel!
+    @IBOutlet weak var weatherLabel: UILabel!
+    
+    
+//create a variable for protocole HomeDelegate
+    var delegate : HomeDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        LocationManagerFiles.sharedLocation.setupLocation()
+        
+        //created an object of locationFetch class and passed to delegate variable
+        //why?
+        delegate = LocationManagerFiles.sharedLocation
+        // whats happening here?
+        delegate?.homeDelegate(obj: self)
+        
+       
     }
     
+    //implemnetation of location delegate 
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        var currentLocation : CLLocation?
+        if !locations.isEmpty,currentLocation == nil {
+            currentLocation = locations.first
+            LocationManagerFiles.sharedLocation.requestWeatherForLocation()
+        }
+    }
+    
+   
+    
+   
 }

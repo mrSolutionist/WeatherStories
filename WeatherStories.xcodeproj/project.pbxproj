@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC1611D4272FF6E00042A6A0 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1611D3272FF6E00042A6A0 /* NetworkManager.swift */; };
+		BC1611D627301D6B0042A6A0 /* ApiFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1611D527301D6B0042A6A0 /* ApiFileManager.swift */; };
 		BC859623272E686E001BB9D8 /* WelcomePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC859622272E686E001BB9D8 /* WelcomePageVC.swift */; };
 		BC859625272E6CB9001BB9D8 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC859624272E6CB9001BB9D8 /* HomeVC.swift */; };
+		BCA715B4272F122B00646EA2 /* pexels-taryn-elliott-8549517.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = BCA715B3272F122B00646EA2 /* pexels-taryn-elliott-8549517.mp4 */; };
+		BCA715B6272F134400646EA2 /* videoFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA715B5272F134400646EA2 /* videoFile.swift */; };
+		BCA715BA272F13B400646EA2 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA715B9272F13B400646EA2 /* LocationManager.swift */; };
 		BCD303E8272D740F00250513 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD303E7272D740F00250513 /* AppDelegate.swift */; };
 		BCD303EA272D740F00250513 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD303E9272D740F00250513 /* SceneDelegate.swift */; };
 		BCD303EF272D740F00250513 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCD303ED272D740F00250513 /* Main.storyboard */; };
@@ -18,8 +23,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BC1611D3272FF6E00042A6A0 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		BC1611D527301D6B0042A6A0 /* ApiFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiFileManager.swift; sourceTree = "<group>"; };
 		BC859622272E686E001BB9D8 /* WelcomePageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePageVC.swift; sourceTree = "<group>"; };
 		BC859624272E6CB9001BB9D8 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		BCA715B3272F122B00646EA2 /* pexels-taryn-elliott-8549517.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pexels-taryn-elliott-8549517.mp4"; sourceTree = "<group>"; };
+		BCA715B5272F134400646EA2 /* videoFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = videoFile.swift; sourceTree = "<group>"; };
+		BCA715B9272F13B400646EA2 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		BCD303E4272D740F00250513 /* WeatherStories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherStories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCD303E7272D740F00250513 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCD303E9272D740F00250513 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +55,10 @@
 			isa = PBXGroup;
 			children = (
 				BC859624272E6CB9001BB9D8 /* HomeVC.swift */,
+				BCA715B9272F13B400646EA2 /* LocationManager.swift */,
+				BC1611D527301D6B0042A6A0 /* ApiFileManager.swift */,
+				BC1611D3272FF6E00042A6A0 /* NetworkManager.swift */,
+				BCA715B5272F134400646EA2 /* videoFile.swift */,
 				BC859622272E686E001BB9D8 /* WelcomePageVC.swift */,
 			);
 			path = Controllers;
@@ -71,6 +85,7 @@
 			children = (
 				BCD303E7272D740F00250513 /* AppDelegate.swift */,
 				BCD303E9272D740F00250513 /* SceneDelegate.swift */,
+				BCA715B3272F122B00646EA2 /* pexels-taryn-elliott-8549517.mp4 */,
 				BCD303ED272D740F00250513 /* Main.storyboard */,
 				BC859626272E6CC2001BB9D8 /* Controllers */,
 				BCD303F3272D741000250513 /* Assets.xcassets */,
@@ -141,6 +156,7 @@
 			files = (
 				BCD303F7272D741000250513 /* LaunchScreen.storyboard in Resources */,
 				BCD303F4272D741000250513 /* Assets.xcassets in Resources */,
+				BCA715B4272F122B00646EA2 /* pexels-taryn-elliott-8549517.mp4 in Resources */,
 				BCD303EF272D740F00250513 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -155,7 +171,11 @@
 				BC859623272E686E001BB9D8 /* WelcomePageVC.swift in Sources */,
 				BC859625272E6CB9001BB9D8 /* HomeVC.swift in Sources */,
 				BCD303F2272D740F00250513 /* WeatherStories.xcdatamodeld in Sources */,
+				BCA715BA272F13B400646EA2 /* LocationManager.swift in Sources */,
+				BC1611D4272FF6E00042A6A0 /* NetworkManager.swift in Sources */,
+				BCA715B6272F134400646EA2 /* videoFile.swift in Sources */,
 				BCD303E8272D740F00250513 /* AppDelegate.swift in Sources */,
+				BC1611D627301D6B0042A6A0 /* ApiFileManager.swift in Sources */,
 				BCD303EA272D740F00250513 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
