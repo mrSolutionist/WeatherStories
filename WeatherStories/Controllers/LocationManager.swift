@@ -31,7 +31,7 @@ class LocationManagerFiles:HomeDelegate{
     }
     
     func requestWeatherForLocation(){
-        locationManager.stopUpdatingLocation()
+       
         guard let currentLocation = currentLocation else {
             return
         }
@@ -40,6 +40,7 @@ class LocationManagerFiles:HomeDelegate{
        let long = String(currentLocation.coordinate.longitude)
         let lat = String(currentLocation.coordinate.latitude)
         NetworkManager.sharedNetwork.coordinates(lat: lat, long: long)
+        ApiManager.sharedApi.dataFetch()
     }
     
     

@@ -20,8 +20,8 @@ class NetworkManager{
     
     
     func coordinates(lat : String,long : String){
-        currentLatitude = lat
-        currentLongitude = long
+        self.currentLatitude = lat
+        self.currentLongitude = long
         
         
     }

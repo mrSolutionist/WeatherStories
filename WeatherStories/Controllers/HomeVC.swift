@@ -43,9 +43,10 @@ class HomeVC: UIViewController,CLLocationManagerDelegate{
     
     //implemnetation of location delegate 
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        var currentLocation : CLLocation?
-        if !locations.isEmpty,currentLocation == nil {
-            currentLocation = locations.first
+        
+        if !locations.isEmpty, LocationManagerFiles.sharedLocation.currentLocation == nil {
+            LocationManagerFiles.sharedLocation.currentLocation = locations.first
+            LocationManagerFiles.sharedLocation.locationManager.stopUpdatingLocation()
             LocationManagerFiles.sharedLocation.requestWeatherForLocation()
         }
     }
