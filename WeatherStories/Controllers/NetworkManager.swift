@@ -20,21 +20,21 @@ class NetworkManager{
     var conditionImage : String {
          switch conditionId {
          case 200...232:
-             return "cloud.bolt.rain"
+             return "thunderstorms-rain"
          case 300...321:
-             return "cloud.drizzle"
+             return "drizzle"
          case 500...531:
-             return "cloud.rain"
+             return "rain"
          case 600...622:
-             return "cloud.snow"
+             return "snow"
          case 701...781:
-             return "cloud.fog"
+             return "fog"
          case 800:
-             return "sun.max"
+             return "clear-day"
          case 801...804:
-             return "cloud.blot"
+             return "lightning-bolt"
          default:
-             return "cloud"
+             return "cloudy"
          }
      }
     func coordinates(lat : String,long : String){

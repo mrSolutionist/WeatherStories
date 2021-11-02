@@ -54,7 +54,7 @@
                                     <segue destination="7kj-6y-kFT" kind="show" id="frA-Ph-Kck"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1E9-df-B8a">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ezgif.com-gif-maker.gif" translatesAutoresizingMaskIntoConstraints="NO" id="1E9-df-B8a">
                                 <rect key="frame" x="56.5" y="88" width="301" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="1E9-df-B8a" secondAttribute="height" multiplier="3:2" id="3rM-Bs-6JL"/>
@@ -93,9 +93,10 @@
                                     <constraint firstAttribute="width" constant="200" id="6mo-BR-PnJ"/>
                                     <constraint firstAttribute="height" constant="80" id="UAa-rd-rMb"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="26" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9BY-UM-79h">
                                 <rect key="frame" x="139" y="212" width="100" height="100"/>
@@ -103,9 +104,10 @@
                                     <constraint firstAttribute="height" constant="100" id="HYx-0V-PLU"/>
                                     <constraint firstAttribute="width" constant="100" id="W3O-pW-cUw"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="60"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="60"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="°" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hGf-xh-gIk">
                                 <rect key="frame" x="239" y="202.5" width="50" height="100"/>
@@ -114,8 +116,9 @@
                                     <constraint firstAttribute="width" constant="50" id="j8s-dN-cmt"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="71"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clouds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dko-GR-xIO">
                                 <rect key="frame" x="157" y="281" width="100" height="50"/>
@@ -123,31 +126,114 @@
                                     <constraint firstAttribute="height" constant="50" id="4PA-iX-Dh7"/>
                                     <constraint firstAttribute="width" constant="100" id="z6e-gG-YNn"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="clear-day" translatesAutoresizingMaskIntoConstraints="NO" id="sY3-av-hYU">
-                                <rect key="frame" x="87" y="393" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clear-day" translatesAutoresizingMaskIntoConstraints="NO" id="sY3-av-hYU">
+                                <rect key="frame" x="201" y="78" width="193" height="106"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="193" id="QZ0-m8-Wj7"/>
+                                    <constraint firstAttribute="height" constant="106" id="fPX-hs-Uml"/>
+                                </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="max Temp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XrO-1D-POw">
+                                <rect key="frame" x="110" y="320" width="73.5" height="21"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="min Temp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DUS-T4-lKh">
+                                <rect key="frame" x="231" y="320" width="73.5" height="21"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6nw-la-1el">
+                                <rect key="frame" x="115" y="350.5" width="62" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="62" id="IHu-7C-H3Q"/>
+                                    <constraint firstAttribute="height" constant="17" id="M6B-as-Tap"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FMn-CW-C1S">
+                                <rect key="frame" x="239" y="350.5" width="62" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="62" id="GDk-Fg-hmq"/>
+                                    <constraint firstAttribute="height" constant="17" id="rEr-r8-F8c"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="°" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z9o-ea-GuM">
+                                <rect key="frame" x="157" y="343" width="19" height="17.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17.5" id="WLp-Ab-mrx"/>
+                                    <constraint firstAttribute="width" constant="19" id="lJn-xT-jv4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="°" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X33-87-9zv">
+                                <rect key="frame" x="282" y="343" width="19" height="17.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17.5" id="5rv-Yc-qqS"/>
+                                    <constraint firstAttribute="width" constant="19" id="KOK-hU-KY9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="DPv-ub-e4V"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
                         <constraints>
+                            <constraint firstItem="Z9o-ea-GuM" firstAttribute="top" secondItem="XrO-1D-POw" secondAttribute="bottom" constant="2" id="6Io-vP-Wgw"/>
+                            <constraint firstItem="XrO-1D-POw" firstAttribute="centerY" secondItem="45C-XU-H1X" secondAttribute="centerY" constant="-117.5" id="6dw-VB-fdG"/>
+                            <constraint firstItem="DUS-T4-lKh" firstAttribute="width" secondItem="XrO-1D-POw" secondAttribute="width" id="8hI-Zc-fdx"/>
+                            <constraint firstItem="sY3-av-hYU" firstAttribute="centerY" secondItem="45C-XU-H1X" secondAttribute="centerY" constant="-317" id="B0o-ic-b0W"/>
                             <constraint firstItem="dko-GR-xIO" firstAttribute="top" secondItem="o3V-cX-HD9" secondAttribute="bottom" constant="38" id="F18-46-lNe"/>
                             <constraint firstItem="o3V-cX-HD9" firstAttribute="centerY" secondItem="45C-XU-H1X" secondAttribute="centerY" constant="-245" id="ILt-sy-omS"/>
+                            <constraint firstItem="X33-87-9zv" firstAttribute="centerX" secondItem="45C-XU-H1X" secondAttribute="centerX" constant="84.5" id="Ib4-1S-MOO"/>
                             <constraint firstItem="o3V-cX-HD9" firstAttribute="centerX" secondItem="45C-XU-H1X" secondAttribute="centerX" id="JjJ-Db-uQn"/>
+                            <constraint firstItem="6nw-la-1el" firstAttribute="top" secondItem="XrO-1D-POw" secondAttribute="bottom" constant="9.5" id="LXa-N3-d7x"/>
+                            <constraint firstItem="DUS-T4-lKh" firstAttribute="centerY" secondItem="45C-XU-H1X" secondAttribute="centerY" constant="-117.5" id="N3A-0s-HRI"/>
                             <constraint firstItem="9BY-UM-79h" firstAttribute="centerX" secondItem="45C-XU-H1X" secondAttribute="centerX" constant="-18" id="Pdy-bb-JhD"/>
+                            <constraint firstItem="Z9o-ea-GuM" firstAttribute="centerY" secondItem="45C-XU-H1X" secondAttribute="centerY" constant="-96.25" id="QsU-o8-kTo"/>
+                            <constraint firstItem="FMn-CW-C1S" firstAttribute="centerX" secondItem="45C-XU-H1X" secondAttribute="centerX" constant="63" id="SFl-iM-XJr"/>
+                            <constraint firstItem="X33-87-9zv" firstAttribute="top" secondItem="DUS-T4-lKh" secondAttribute="bottom" constant="2" id="Wk5-y1-H1F"/>
+                            <constraint firstItem="DUS-T4-lKh" firstAttribute="centerX" secondItem="45C-XU-H1X" secondAttribute="centerX" constant="60.5" id="Xui-75-Zig"/>
+                            <constraint firstItem="DUS-T4-lKh" firstAttribute="height" secondItem="XrO-1D-POw" secondAttribute="height" id="Ykx-h3-IvG"/>
+                            <constraint firstItem="FMn-CW-C1S" firstAttribute="top" secondItem="DUS-T4-lKh" secondAttribute="bottom" constant="9.5" id="atW-Uf-s0t"/>
                             <constraint firstItem="dko-GR-xIO" firstAttribute="centerX" secondItem="45C-XU-H1X" secondAttribute="centerX" id="bm9-Es-MhN"/>
+                            <constraint firstItem="sY3-av-hYU" firstAttribute="centerX" secondItem="45C-XU-H1X" secondAttribute="centerX" constant="90.5" id="cUu-3y-ZHI"/>
                             <constraint firstItem="9BY-UM-79h" firstAttribute="centerY" secondItem="45C-XU-H1X" secondAttribute="centerY" constant="-186" id="dsV-8c-w8T"/>
+                            <constraint firstItem="6nw-la-1el" firstAttribute="centerY" secondItem="45C-XU-H1X" secondAttribute="centerY" constant="-89" id="hjO-xw-p2q"/>
+                            <constraint firstItem="X33-87-9zv" firstAttribute="centerY" secondItem="45C-XU-H1X" secondAttribute="centerY" constant="-96.25" id="n9a-sk-pfL"/>
+                            <constraint firstItem="Z9o-ea-GuM" firstAttribute="centerX" secondItem="45C-XU-H1X" secondAttribute="centerX" constant="-40.5" id="x2K-ed-Zjb"/>
+                            <constraint firstItem="6nw-la-1el" firstAttribute="centerX" secondItem="45C-XU-H1X" secondAttribute="centerX" constant="-61" id="xX9-Rn-tRv"/>
                             <constraint firstItem="hGf-xh-gIk" firstAttribute="centerX" secondItem="45C-XU-H1X" secondAttribute="centerX" constant="57" id="yAz-2Z-Wg2"/>
                             <constraint firstItem="hGf-xh-gIk" firstAttribute="centerY" secondItem="45C-XU-H1X" secondAttribute="centerY" constant="-195.5" id="zBY-VP-hXR"/>
+                            <constraint firstItem="XrO-1D-POw" firstAttribute="centerX" secondItem="45C-XU-H1X" secondAttribute="centerX" constant="-60.5" id="zyF-It-7JM"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Current Location" id="YeK-CC-LHL"/>
                     <connections>
                         <outlet property="iconImage" destination="sY3-av-hYU" id="Xp9-dc-lWX"/>
+                        <outlet property="maxTemp" destination="6nw-la-1el" id="o25-uK-y2I"/>
+                        <outlet property="minTemp" destination="FMn-CW-C1S" id="Luj-Jy-wrD"/>
                         <outlet property="placeLabel" destination="o3V-cX-HD9" id="6LZ-jV-R83"/>
                         <outlet property="tempLabel" destination="9BY-UM-79h" id="8Bp-YA-TVY"/>
                         <outlet property="weatherLabel" destination="dko-GR-xIO" id="gqK-yL-Djh"/>
@@ -160,8 +246,12 @@
     </scenes>
     <resources>
         <image name="clear-day" width="64" height="64"/>
+        <image name="ezgif.com-gif-maker.gif" width="800" height="1422"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

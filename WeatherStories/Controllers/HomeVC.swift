@@ -25,11 +25,15 @@ class HomeVC: UIViewController,CLLocationManagerDelegate{
     
     @IBOutlet weak var iconImage: UIImageView!
     
-//create a variable for protocole HomeDelegate
+    @IBOutlet weak var minTemp: UILabel!
+    
+    @IBOutlet weak var maxTemp: UILabel!
+    //create a variable for protocole HomeDelegate
     var delegate : HomeDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
        
     }
