@@ -40,7 +40,10 @@ class LocationManagerFiles:HomeDelegate{
        let long = String(currentLocation.coordinate.longitude)
         let lat = String(currentLocation.coordinate.latitude)
         NetworkManager.sharedNetwork.coordinates(lat: lat, long: long)
-        ApiManager.sharedApi.dataFetch()
+        ApiManager.sharedApi.dataFetch { json,arg  in
+            NetworkManager.sharedNetwork.jsonDatas(name: json!.name, weather: json!.base,setFlag: arg)
+           
+        }
     }
     
     

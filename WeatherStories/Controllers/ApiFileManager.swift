@@ -14,7 +14,7 @@ class ApiManager{
     let lat  = NetworkManager.sharedNetwork.currentLatitude
     let long = NetworkManager.sharedNetwork.currentLongitude
     
-    func dataFetch(){
+    func dataFetch(complition: @escaping (_ json:Welcome?,_ flag:Int)->()){
         
         let url = URL(string: "https://api.openweathermap.org/data/2.5/weather?lat=\(lat!)&lon=\(long!)&appid=7a6f50d61e91ebe14eca463f3afd0895")
         URLSession.shared.dataTask(with: url!) { data, resp, err in
@@ -24,6 +24,7 @@ class ApiManager{
             }
             let jsonObj = try! JSONDecoder().decode(Welcome.self, from: data)
             
+            complition(jsonObj, 1)
             
         }.resume()
         
