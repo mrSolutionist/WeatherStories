@@ -1,15 +1,12 @@
+// This file was generated from JSON Schema using quicktype, do not modify it directly.
+// To parse the JSON, add this file to your project and do:
 //
-//  WeatherModel.swift
-//  WeatherStories
-//
-//  Created by Robin George on 01/11/21.
-//
+//   let weatherResponse = try? newJSONDecoder().decode(WeatherResponse.self, from: jsonData)
 
 import Foundation
 
-
-// MARK: - Welcome
-struct Welcome: Codable {
+// MARK: - WeatherResponse
+struct WeatherResponse: Codable {
     let coord: Coord
     let weather: [Weather]
     let base: String

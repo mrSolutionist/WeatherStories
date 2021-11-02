@@ -13,8 +13,8 @@ class NetworkManager{
     var currentLongitude : String?
     var currentPlaceName : String?
     var currentWeather : String?
-//    var currentTemp : String?
-    var flag : Int?
+    var currentTemp : Double?
+    
     static var sharedNetwork = NetworkManager()
 
 
@@ -27,11 +27,20 @@ class NetworkManager{
         
     }
     
-    func jsonDatas(name:String,weather:String,setFlag:Int){
-        flag = setFlag
-        currentPlaceName = name
-        currentWeather = weather
-//        currentTemp = temp
-    }
+    //not needed now
+//
+//    func jsonDatas(name:String,weather:String){
+//
+//        currentPlaceName = name
+//        currentWeather = weather
+////        currentTemp = temp
+//    }
 }
 
+struct Model{
+    var currentLatitude : String?
+    var currentLongitude : String?
+    var currentPlaceName : String?
+    var currentWeather : String?
+    var currentTemp : Double?
+}
