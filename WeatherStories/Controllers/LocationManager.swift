@@ -42,7 +42,10 @@ class LocationManagerFiles:HomeDelegate{
         let lat = String(currentLocation.coordinate.latitude)
         NetworkManager.sharedNetwork.coordinates(lat: lat, long: long)
         ApiManager.sharedApi.dataFetch { json  in
-            
+            NetworkManager.sharedNetwork.conditionId = (json?.weather[0].id)!
+            let weatherName = json?.weather[0].weatherDescription
+            let weatherImageName =  weatherName?.components(separatedBy: " ")
+            let image = "\(weatherImageName![0])-\(weatherImageName![1])"
             
             DispatchQueue.main.async {
                 self.homeObj?.placeLabel.text = json?.name
@@ -50,6 +53,7 @@ class LocationManagerFiles:HomeDelegate{
                
                 let roundedTempValue = json?.main.temp
                 self.homeObj?.tempLabel.text = String(String(format: "%.0f", (roundedTempValue?.rounded())!))
+                self.homeObj?.iconImage.image = UIImage(imageLiteralResourceName:"clear-sky")
             }
             
            

@@ -147,6 +147,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Current Location" id="YeK-CC-LHL"/>
                     <connections>
+                        <outlet property="iconImage" destination="sY3-av-hYU" id="Xp9-dc-lWX"/>
                         <outlet property="placeLabel" destination="o3V-cX-HD9" id="6LZ-jV-R83"/>
                         <outlet property="tempLabel" destination="9BY-UM-79h" id="8Bp-YA-TVY"/>
                         <outlet property="weatherLabel" destination="dko-GR-xIO" id="gqK-yL-Djh"/>

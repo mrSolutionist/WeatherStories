@@ -23,6 +23,7 @@ class HomeVC: UIViewController,CLLocationManagerDelegate{
     @IBOutlet weak var tempLabel: UILabel!
     @IBOutlet weak var weatherLabel: UILabel!
     
+    @IBOutlet weak var iconImage: UIImageView!
     
 //create a variable for protocole HomeDelegate
     var delegate : HomeDelegate?
@@ -37,6 +38,7 @@ class HomeVC: UIViewController,CLLocationManagerDelegate{
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
         LocationManagerFiles.sharedLocation.setupLocation()
         
         //created an object of locationFetch class and passed to delegate variable
@@ -49,7 +51,7 @@ class HomeVC: UIViewController,CLLocationManagerDelegate{
     //implemnetation of location delegate 
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
-        if !locations.isEmpty, LocationManagerFiles.sharedLocation.currentLocation == nil {
+        if !locations.isEmpty {
             LocationManagerFiles.sharedLocation.currentLocation = locations.first
             LocationManagerFiles.sharedLocation.locationManager.stopUpdatingLocation()
             LocationManagerFiles.sharedLocation.requestWeatherForLocation()
