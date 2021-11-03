@@ -196,6 +196,28 @@
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="jGU-Wq-aih">
+                                <rect key="frame" x="20" y="387" width="374" height="484"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="FwB-04-VDx" customClass="WeatherTableViewCell" customModule="WeatherStories" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="49.5" width="334" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FwB-04-VDx" id="rpt-Hi-tJ9">
+                                            <rect key="frame" x="0.0" y="0.0" width="334" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KBX-DC-PT0">
+                                                    <rect key="frame" x="-11" y="-10" width="356" height="66"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                </view>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="DPv-ub-e4V"/>
                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
@@ -231,6 +253,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Current Location" id="YeK-CC-LHL"/>
                     <connections>
+                        <outlet property="dailyWeatherTable" destination="jGU-Wq-aih" id="Nde-6t-teJ"/>
                         <outlet property="iconImage" destination="sY3-av-hYU" id="Xp9-dc-lWX"/>
                         <outlet property="maxTemp" destination="6nw-la-1el" id="o25-uK-y2I"/>
                         <outlet property="minTemp" destination="FMn-CW-C1S" id="Luj-Jy-wrD"/>

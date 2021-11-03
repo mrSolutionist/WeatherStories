@@ -9,14 +9,23 @@ import Foundation
 import CoreLocation
 import UIKit
 
-
+protocol LocationDelegate{
+    func weatherTableDelegate()
+}
 class LocationManagerFiles:HomeDelegate{
     
     static let sharedLocation = LocationManagerFiles()
+    
+    
     var homeObj :HomeVC?
     //created an instance for CLLocationManager
     var locationManager = CLLocationManager()
     var currentLocation : CLLocation?
+    var delegate : LocationDelegate?
+    
+    
+    
+    
     //implemamtation of protocol HomeDelegate
     func homeDelegate(obj: HomeVC) {
         homeObj = obj
@@ -60,6 +69,13 @@ class LocationManagerFiles:HomeDelegate{
             
            
         }
+        
+        //for passing data to the common class and delegate is called once data is transfered to reload the table view
+        DailyApi.sharedApi.dataFetch { json in
+            NetworkManager.sharedNetwork.dailyData(data: json?.daily)
+            self.delegate?.weatherTableDelegate()
+        }
+       
     }
     
     

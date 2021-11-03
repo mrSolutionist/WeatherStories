@@ -7,32 +7,26 @@ import Foundation
 
 // MARK: - WeatherResponse
 struct WeatherResponse: Codable {
-    let coord: Coord
-    let weather: [Weather]
-    let base: String
-    let main: Main
-    let visibility: Int
-    let wind: Wind
-    let clouds: Clouds
-    let dt: Int
-    let sys: Sys
-    let timezone, id: Int
+    let coord: Coords
+    let weather: [Weathers]
+    let main: Mains
+    let clouds: Cloudss
     let name: String
     let cod: Int
 }
 
 // MARK: - Clouds
-struct Clouds: Codable {
+struct Cloudss: Codable {
     let all: Int
 }
 
 // MARK: - Coord
-struct Coord: Codable {
+struct Coords: Codable {
     let lon, lat: Double
 }
 
 // MARK: - Main
-struct Main: Codable {
+struct Mains: Codable {
     let temp, feelsLike, tempMin, tempMax: Double
     let pressure, humidity: Int
 
@@ -53,7 +47,7 @@ struct Sys: Codable {
 }
 
 // MARK: - Weather
-struct Weather: Codable {
+struct Weathers: Codable {
     let id: Int
     let main, weatherDescription, icon: String
 

@@ -15,6 +15,8 @@ class NetworkManager{
     var currentWeather : String?
     var currentTemp : Double?
     var conditionId = Int()
+    
+    var dailyObj : [Daily]?
     static var sharedNetwork = NetworkManager()
     
     var conditionImage : String {
@@ -43,7 +45,12 @@ class NetworkManager{
         
         
     }
-    
+    func dailyData(data:[Daily]? ){
+        
+        dailyObj = data
+        
+        
+    }
 
 }
 

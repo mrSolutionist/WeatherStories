@@ -17,6 +17,7 @@ protocol HomeDelegate{
 
 class HomeVC: UIViewController,CLLocationManagerDelegate{
     
+    @IBOutlet weak var dailyWeatherTable: UITableView!
     
  
     @IBOutlet weak var placeLabel: UILabel!
@@ -34,7 +35,8 @@ class HomeVC: UIViewController,CLLocationManagerDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        dailyWeatherTable.dataSource = self
+        LocationManagerFiles.sharedLocation.delegate = self
        
     }
     
@@ -65,4 +67,33 @@ class HomeVC: UIViewController,CLLocationManagerDelegate{
    
     
    
+}
+
+extension HomeVC: UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return NetworkManager.sharedNetwork.dailyObj?.count ?? 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        
+        cell.textLabel?.text = NetworkManager.sharedNetwork.dailyObj?[indexPath.row].weather[0].main
+        
+        return cell
+    }
+    
+    
+    
+}
+
+//after data is added to DailyWeather object 'dailyObj' this is used to reload weather table view
+extension HomeVC: LocationDelegate{
+    func weatherTableDelegate() {
+        DispatchQueue.main.async {
+            self.dailyWeatherTable.reloadData()
+        }
+        
+    }
+    
+    
 }
