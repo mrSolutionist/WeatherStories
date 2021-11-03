@@ -19,7 +19,7 @@ class ApiManager{
     
     func dataFetch(complition:@escaping (_ json:WeatherResponse?)->()){
         
-        let url = URL(string: "https://api.openweathermap.org/data/2.5/weather?lat=\(lat!)&lon=\(long!)&appid=7a6f50d61e91ebe14eca463f3afd0895&units=metric")
+        let url = URL(string: "https://api.openweathermap.org/data/2.5/weather?lat=\(lat!)&lon=\(long!)&appid=204b1d948b2e95121c20af820c73e4b8&units=metric")
         URLSession.shared.dataTask(with: url!) { data, resp, err in
             
             guard let data = data else{
