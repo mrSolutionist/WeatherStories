@@ -26,7 +26,7 @@ class ApiManager{
                 return
             }
             let jsonObj = try! JSONDecoder().decode(WeatherResponse.self, from: data)
-            
+            NetworkManager.sharedNetwork.currntApiObj = jsonObj
             complition(jsonObj)
             
         }.resume()

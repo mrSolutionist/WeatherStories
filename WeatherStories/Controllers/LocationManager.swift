@@ -60,10 +60,10 @@ class LocationManagerFiles:HomeDelegate{
             DispatchQueue.main.async {
                 self.homeObj?.placeLabel.text = json?.name
                 self.homeObj?.weatherLabel.text = json?.weather[0].main
-                self.homeObj?.maxTemp.text = String((json?.main.tempMax)!)
-                self.homeObj?.minTemp.text = String((json?.main.tempMin)!)
+                self.homeObj?.maxTemp.text = "\(String((json?.main.tempMax)!))°"
+                self.homeObj?.minTemp.text = "\(String((json?.main.tempMin)!))°"
                 let roundedTempValue = json?.main.temp
-                self.homeObj?.tempLabel.text = String(String(format: "%.0f", (roundedTempValue?.rounded())!))
+                self.homeObj?.tempLabel.text = "\(String(format: "%.0f",roundedTempValue!))°"
                 self.homeObj?.iconImage.image = UIImage(imageLiteralResourceName:NetworkManager.sharedNetwork.conditionImage)
             }
             

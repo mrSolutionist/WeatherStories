@@ -76,8 +76,10 @@ extension HomeVC: UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! WeatherTableCell
-        NetworkManager.sharedNetwork.dailyObj?[indexPath.row]
-//        cell.updateCell(model: <#T##TableWeatherModel#>)
+        
+        let dailyObj = NetworkManager.sharedNetwork.dailyObj?[indexPath.row]
+       
+        cell.updateCell(obj: dailyObj!,index:indexPath.row)
         
         return cell
     }

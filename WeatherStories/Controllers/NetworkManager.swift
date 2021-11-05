@@ -15,7 +15,7 @@ class NetworkManager{
     var currentWeather : String?
     var currentTemp : Double?
     var conditionId = Int()
-    
+    var currntApiObj : WeatherResponse?
     var dailyObj : [Daily]?
     static var sharedNetwork = NetworkManager()
     
