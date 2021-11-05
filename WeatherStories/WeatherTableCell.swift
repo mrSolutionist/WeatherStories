@@ -37,8 +37,8 @@ class WeatherTableCell: UITableViewCell {
             weatherLabel.text = weatherObj?.weather[0].main
             NetworkManager.sharedNetwork.conditionId = weatherObj?.weather[0].id ?? 0
             weatherIcon.image = UIImage(imageLiteralResourceName:NetworkManager.sharedNetwork.conditionImage)
-            maxLabel.text = "\(String(weatherObj!.main.tempMax))°"
-            minLabel.text = "\(String( weatherObj!.main.tempMin))°"
+            maxLabel.text = "\(weatherObj?.main.tempMax)°"
+            minLabel.text = "\(weatherObj?.main.tempMin)°"
             
            
         }
