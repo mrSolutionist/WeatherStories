@@ -9,12 +9,12 @@ import UIKit
 
 class CustomCollectionViewCell: UICollectionViewCell {
     
-    var obj = NetworkManager.sharedNetwork.dailyObj
-    @IBOutlet weak var humiItyRangeLabel: UILabel!
+    let obj = SharedDataManager.sharedNetwork.dailyObj
+    @IBOutlet weak var humidityRangeLabel: UILabel!
     
     func collectionCellConfigure(index:Int){
-        humiItyRangeLabel.text = "\(obj?[index].humidity ?? 0)"
-        humiItyRangeLabel.backgroundColor = .blue
+        humidityRangeLabel.text = "\(obj?[index].humidity ?? 0)"
+        humidityRangeLabel.backgroundColor = .blue
     }
 }
 

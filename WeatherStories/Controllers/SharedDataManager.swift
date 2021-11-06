@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class NetworkManager{
+class SharedDataManager{
     var currentLatitude : String?
     var currentLongitude : String?
     var currentPlaceName : String?
@@ -17,7 +17,7 @@ class NetworkManager{
     var conditionId = Int()
     var currntApiObj : WeatherResponse?
     var dailyObj : [Daily]?
-    static var sharedNetwork = NetworkManager()
+    static var sharedNetwork = SharedDataManager()
     
     var conditionImage : String {
          switch conditionId {

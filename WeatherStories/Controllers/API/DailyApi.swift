@@ -14,8 +14,8 @@ class DailyApi{
     
     static var  sharedApi = DailyApi()
     
-    let lat  = NetworkManager.sharedNetwork.currentLatitude
-    let long = NetworkManager.sharedNetwork.currentLongitude
+    let lat  = SharedDataManager.sharedNetwork.currentLatitude
+    let long = SharedDataManager.sharedNetwork.currentLongitude
     
     func dataFetch(complition:@escaping (_ json:DailyWeatherModel?)->()){
         
@@ -28,7 +28,7 @@ class DailyApi{
             let dailyObj = try! JSONDecoder().decode(DailyWeatherModel.self, from: data)
             
             //completion handler is used to pass data once the data is fetched from api
-            
+            SharedDataManager.sharedNetwork.dailyObj = dailyObj.daily
             complition(dailyObj)
             
         }.resume()

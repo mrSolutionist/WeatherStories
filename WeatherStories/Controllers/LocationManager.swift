@@ -9,9 +9,13 @@ import Foundation
 import CoreLocation
 import UIKit
 
+//for Reloading Data from Home VC
 protocol LocationDelegate{
     func weatherTableDelegate()
 }
+
+
+
 class LocationManagerFiles:HomeDelegate{
     
     static let sharedLocation = LocationManagerFiles()
@@ -49,9 +53,9 @@ class LocationManagerFiles:HomeDelegate{
         
        let long = String(currentLocation.coordinate.longitude)
         let lat = String(currentLocation.coordinate.latitude)
-        NetworkManager.sharedNetwork.coordinates(lat: lat, long: long)
+        SharedDataManager.sharedNetwork.coordinates(lat: lat, long: long)
         ApiManager.sharedApi.dataFetch { json  in
-            NetworkManager.sharedNetwork.conditionId = (json?.weather[0].id)!
+            SharedDataManager.sharedNetwork.conditionId = (json?.weather[0].id)!
 
             
            
@@ -64,7 +68,7 @@ class LocationManagerFiles:HomeDelegate{
                 self.homeObj?.minTemp.text = "\(String((json?.main.tempMin)!))°"
                 let roundedTempValue = json?.main.temp
                 self.homeObj?.tempLabel.text = "\(String(format: "%.0f",roundedTempValue!))°"
-                self.homeObj?.iconImage.image = UIImage(imageLiteralResourceName:NetworkManager.sharedNetwork.conditionImage)
+                self.homeObj?.iconImage.image = UIImage(imageLiteralResourceName:SharedDataManager.sharedNetwork.conditionImage)
             }
             
            
@@ -72,7 +76,8 @@ class LocationManagerFiles:HomeDelegate{
         
         //for passing data to the common class and delegate is called once data is transfered to reload the table view
         DailyApi.sharedApi.dataFetch { json in
-            NetworkManager.sharedNetwork.dailyData(data: json?.daily)
+            SharedDataManager.sharedNetwork.dailyData(data: json?.daily)
+            
             self.delegate?.weatherTableDelegate()
         }
        

@@ -31,6 +31,7 @@ class WeatherTableCell: UITableViewCell {
     
     func updateCell(obj:Daily,index:Int){
         
+        
         if index == 0{
             dayLabel.text = "Today"
           
@@ -47,8 +48,8 @@ class WeatherTableCell: UITableViewCell {
             
             
             weatherLabel.text = obj.weather[0].main
-            NetworkManager.sharedNetwork.conditionId = obj.weather[0].id
-            weatherIcon.image = UIImage(imageLiteralResourceName:NetworkManager.sharedNetwork.conditionImage)
+            SharedDataManager.sharedNetwork.conditionId = obj.weather[0].id
+            weatherIcon.image = UIImage(imageLiteralResourceName:SharedDataManager.sharedNetwork.conditionImage)
             maxLabel.text = "\(String(obj.temp.max))°"
             minLabel.text = "\(String(obj.temp.min))°"
             
@@ -60,8 +61,8 @@ class WeatherTableCell: UITableViewCell {
             let day = getDay(timeStamp: timeStamp)
             dayLabel.text = day
             weatherLabel.text = obj.weather[0].main
-            NetworkManager.sharedNetwork.conditionId = obj.weather[0].id
-            weatherIcon.image = UIImage(imageLiteralResourceName:NetworkManager.sharedNetwork.conditionImage)
+            SharedDataManager.sharedNetwork.conditionId = obj.weather[0].id
+            weatherIcon.image = UIImage(imageLiteralResourceName:SharedDataManager.sharedNetwork.conditionImage)
             maxLabel.text = "\(String(obj.temp.max))°"
             minLabel.text = "\(String(obj.temp.min))°"
         }

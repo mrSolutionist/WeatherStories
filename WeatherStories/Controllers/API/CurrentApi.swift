@@ -14,8 +14,8 @@ class ApiManager{
     
     static var  sharedApi = ApiManager()
     
-    let lat  = NetworkManager.sharedNetwork.currentLatitude
-    let long = NetworkManager.sharedNetwork.currentLongitude
+    let lat  = SharedDataManager.sharedNetwork.currentLatitude
+    let long = SharedDataManager.sharedNetwork.currentLongitude
     
     func dataFetch(complition:@escaping (_ json:WeatherResponse?)->()){
         
@@ -26,7 +26,7 @@ class ApiManager{
                 return
             }
             let jsonObj = try! JSONDecoder().decode(WeatherResponse.self, from: data)
-            NetworkManager.sharedNetwork.currntApiObj = jsonObj
+            SharedDataManager.sharedNetwork.currntApiObj = jsonObj
             complition(jsonObj)
             
         }.resume()
