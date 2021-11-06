@@ -33,14 +33,27 @@ class WeatherTableCell: UITableViewCell {
         
         if index == 0{
             dayLabel.text = "Today"
-            let weatherObj = NetworkManager.sharedNetwork.currntApiObj
-            weatherLabel.text = weatherObj?.weather[0].main
-            NetworkManager.sharedNetwork.conditionId = weatherObj?.weather[0].id ?? 0
+          
+           
+            
+            //tried to fetch from current api but delay isue causes error. so either i have to put delay to get the data or need to flag when the data comes out not nill
+            
+//let weatherObj = NetworkManager.sharedNetwork.currntApiObj
+//            weatherLabel.text = weatherObj?.weather[0].main
+//            NetworkManager.sharedNetwork.conditionId = weatherObj?.weather[0].id ?? 0
+//            weatherIcon.image = UIImage(imageLiteralResourceName:NetworkManager.sharedNetwork.conditionImage)
+//            maxLabel.text = "\(weatherObj?.main.tempMax)°"
+//            minLabel.text = "\(weatherObj?.main.tempMin)°"
+            
+            
+            weatherLabel.text = obj.weather[0].main
+            NetworkManager.sharedNetwork.conditionId = obj.weather[0].id
             weatherIcon.image = UIImage(imageLiteralResourceName:NetworkManager.sharedNetwork.conditionImage)
-            maxLabel.text = "\(String(weatherObj!.main.tempMax))°"
-            minLabel.text = "\(String( weatherObj!.main.tempMin))°"
+            maxLabel.text = "\(String(obj.temp.max))°"
+            minLabel.text = "\(String(obj.temp.min))°"
             
            
+            
         }
         else {
             let timeStamp = obj.dt

@@ -15,7 +15,7 @@ protocol HomeDelegate{
     func homeDelegate(obj:HomeVC)
 }
 
-class HomeVC: UIViewController,CLLocationManagerDelegate{
+class HomeVC: UIViewController,CLLocationManagerDelegate, UICollectionViewDelegate{
     
     @IBOutlet weak var dailyWeatherTable: UITableView!
     
@@ -23,20 +23,27 @@ class HomeVC: UIViewController,CLLocationManagerDelegate{
     @IBOutlet weak var placeLabel: UILabel!
     @IBOutlet weak var tempLabel: UILabel!
     @IBOutlet weak var weatherLabel: UILabel!
-    
     @IBOutlet weak var iconImage: UIImageView!
-    
     @IBOutlet weak var minTemp: UILabel!
-    
     @IBOutlet weak var maxTemp: UILabel!
+    @IBOutlet weak var collectionView: CustomCollectionView!
     //create a variable for protocole HomeDelegate
+    
+    
     var delegate : HomeDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //TableView Delegate
         dailyWeatherTable.dataSource = self
+        
+        //locationManager  Delegate
         LocationManagerFiles.sharedLocation.delegate = self
+        
+        //CollectionView Delegate
+        collectionView.delegate = self
+        
        
     }
     
@@ -68,7 +75,7 @@ class HomeVC: UIViewController,CLLocationManagerDelegate{
     
    
 }
-
+//table view implimentation
 extension HomeVC: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return NetworkManager.sharedNetwork.dailyObj?.count ?? 0
@@ -84,6 +91,21 @@ extension HomeVC: UITableViewDataSource{
         return cell
     }
     
+}
+
+//collectionaview implimentation
+
+extension HomeVC:UICollectionViewDataSource{
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionCell", for: indexPath)
+        cell.backgroundColor = .blue
+        
+        return cell
+    }
     
     
 }
