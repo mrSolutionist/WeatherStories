@@ -43,6 +43,7 @@ class HomeVC: UIViewController,CLLocationManagerDelegate, UICollectionViewDelega
         
         //CollectionView Delegate
         collectionView.delegate = self
+        collectionView.dataSource = self
         
        
     }
@@ -101,8 +102,9 @@ extension HomeVC:UICollectionViewDataSource{
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionCell", for: indexPath)
-        cell.backgroundColor = .blue
+        let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionCell", for: indexPath) as! CustomCollectionViewCell
+        cell.collectionCellConfigure(index: indexPath.row)
+        
         
         return cell
     }

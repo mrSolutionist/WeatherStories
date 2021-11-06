@@ -14,6 +14,7 @@
 		BC779E9C27354BD500060279 /* CustomCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC779E9B27354BD500060279 /* CustomCollectionView.swift */; };
 		BC859623272E686E001BB9D8 /* WelcomePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC859622272E686E001BB9D8 /* WelcomePageVC.swift */; };
 		BC859625272E6CB9001BB9D8 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC859624272E6CB9001BB9D8 /* HomeVC.swift */; };
+		BC87635427368169009D5FEE /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC87635327368169009D5FEE /* CustomCollectionViewCell.swift */; };
 		BCA715B4272F122B00646EA2 /* pexels-taryn-elliott-8549517.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = BCA715B3272F122B00646EA2 /* pexels-taryn-elliott-8549517.mp4 */; };
 		BCA715BA272F13B400646EA2 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA715B9272F13B400646EA2 /* LocationManager.swift */; };
 		BCAB688F273285DB0084057F /* DailyWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAB688E273285DB0084057F /* DailyWeatherModel.swift */; };
@@ -35,6 +36,7 @@
 		BC779E9B27354BD500060279 /* CustomCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionView.swift; sourceTree = "<group>"; };
 		BC859622272E686E001BB9D8 /* WelcomePageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePageVC.swift; sourceTree = "<group>"; };
 		BC859624272E6CB9001BB9D8 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		BC87635327368169009D5FEE /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomCollectionViewCell.swift; path = WeatherStories/CustomCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
 		BCA715B3272F122B00646EA2 /* pexels-taryn-elliott-8549517.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pexels-taryn-elliott-8549517.mp4"; sourceTree = "<group>"; };
 		BCA715B9272F13B400646EA2 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		BCAB688E273285DB0084057F /* DailyWeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWeatherModel.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 		BC779E9A27354B7B00060279 /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				BC87635327368169009D5FEE /* CustomCollectionViewCell.swift */,
 				BC779E9B27354BD500060279 /* CustomCollectionView.swift */,
 			);
 			path = CollectionView;
@@ -208,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC859623272E686E001BB9D8 /* WelcomePageVC.swift in Sources */,
+				BC87635427368169009D5FEE /* CustomCollectionViewCell.swift in Sources */,
 				BC859625272E6CB9001BB9D8 /* HomeVC.swift in Sources */,
 				BCD303F2272D740F00250513 /* WeatherStories.xcdatamodeld in Sources */,
 				BCA715BA272F13B400646EA2 /* LocationManager.swift in Sources */,
