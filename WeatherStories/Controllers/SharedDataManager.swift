@@ -17,6 +17,7 @@ class SharedDataManager{
     var conditionId = Int()
     var currntApiObj : WeatherResponse?
     var dailyObj : [Daily]?
+    
     static var sharedNetwork = SharedDataManager()
     
     var conditionImage : String {
@@ -51,6 +52,7 @@ class SharedDataManager{
         
         
     }
+   
 
 }
 

@@ -27,8 +27,8 @@ class DailyApi{
             }
             let dailyObj = try! JSONDecoder().decode(DailyWeatherModel.self, from: data)
             
-            //completion handler is used to pass data once the data is fetched from api
-            SharedDataManager.sharedNetwork.dailyObj = dailyObj.daily
+            //completion handler is used to pass data once the data is fetched from api after completing the function
+            
             complition(dailyObj)
             
         }.resume()

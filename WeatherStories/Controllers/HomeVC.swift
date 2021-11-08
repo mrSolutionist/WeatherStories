@@ -106,7 +106,8 @@ extension HomeVC:UICollectionViewDataSource{
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionCell", for: indexPath) as! CustomCollectionViewCell
-        cell.collectionCellConfigure(index: indexPath.row)
+        cell.collectionCellConfigure(indexNum: indexPath.row)
+        
         
         
         return cell
