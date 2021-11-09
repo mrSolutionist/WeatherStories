@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -232,7 +231,7 @@
                                                             </subviews>
                                                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </tableViewCellContentView>
-                                                        <color key="backgroundColor" red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="0.11842315875931292" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <connections>
                                                             <outlet property="dayLabel" destination="gjh-pR-gWB" id="300-IK-Wgp"/>
                                                             <outlet property="maxLabel" destination="qLI-iq-duZ" id="sZe-F8-bsf"/>
@@ -244,11 +243,11 @@
                                                 </prototypes>
                                             </tableView>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="mhh-E4-ACO" customClass="CustomCollectionView" customModule="WeatherStories" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="898" width="374" height="693"/>
+                                                <rect key="frame" x="20" y="898" width="374" height="645"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="374" id="Jgj-0L-Bhp"/>
-                                                    <constraint firstAttribute="height" constant="693" id="ieK-sa-10c"/>
+                                                    <constraint firstAttribute="height" constant="645" id="ieK-sa-10c"/>
                                                 </constraints>
                                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gtu-CZ-7sy">
                                                     <size key="itemSize" width="150" height="150"/>
@@ -282,7 +281,7 @@
                                                                     <rect key="frame" x="101" y="8" width="45" height="39"/>
                                                                 </imageView>
                                                             </subviews>
-                                                            <color key="backgroundColor" white="0.0" alpha="0.83623337903559603" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
                                                                 <constraint firstItem="nid-fU-Zji" firstAttribute="top" secondItem="3sb-QH-PvK" secondAttribute="bottom" constant="6" id="W27-TD-uEm"/>
                                                                 <constraint firstItem="3sb-QH-PvK" firstAttribute="leading" secondItem="YyV-7p-nbu" secondAttribute="leading" constant="101" id="aZf-eJ-651"/>
@@ -290,7 +289,7 @@
                                                                 <constraint firstAttribute="trailing" secondItem="3sb-QH-PvK" secondAttribute="trailing" constant="4" id="mpq-H3-tAN"/>
                                                             </constraints>
                                                         </collectionViewCellContentView>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <size key="customSize" width="150" height="150"/>
                                                         <connections>
                                                             <outlet property="cellLabel" destination="nid-fU-Zji" id="9Mt-8g-i3q"/>
@@ -333,11 +332,18 @@
                                             <constraint firstItem="sY3-av-hYU" firstAttribute="top" secondItem="Jcc-hT-9Ax" secondAttribute="top" constant="40" id="yec-1u-Na1"/>
                                         </constraints>
                                     </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Weather Stories by Robin Geroge" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mU0-E3-cuj">
+                                        <rect key="frame" x="32" y="1646" width="365" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="Jcc-hT-9Ax" secondAttribute="trailing" id="2pT-pD-SAj"/>
-                                    <constraint firstItem="Jcc-hT-9Ax" firstAttribute="bottom" secondItem="aml-s5-Jjd" secondAttribute="bottom" constant="-156" id="Ett-U1-Kct"/>
-                                    <constraint firstItem="Jcc-hT-9Ax" firstAttribute="top" secondItem="aml-s5-Jjd" secondAttribute="top" constant="44" id="V9I-xG-HP3"/>
+                                    <constraint firstItem="Jcc-hT-9Ax" firstAttribute="bottom" secondItem="aml-s5-Jjd" secondAttribute="bottom" constant="-234" id="Ett-U1-Kct"/>
+                                    <constraint firstItem="Jcc-hT-9Ax" firstAttribute="top" secondItem="aml-s5-Jjd" secondAttribute="top" constant="-34" id="V9I-xG-HP3"/>
                                     <constraint firstItem="Jcc-hT-9Ax" firstAttribute="leading" secondItem="aml-s5-Jjd" secondAttribute="leading" id="tE4-XQ-CvR"/>
                                 </constraints>
                             </scrollView>
@@ -374,8 +380,5 @@
     <resources>
         <image name="clear-day" width="64" height="64"/>
         <image name="partly-cloudy-day-haze" width="64" height="64"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>
