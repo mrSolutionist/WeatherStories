@@ -13,6 +13,7 @@ struct CollectionComponentsModel{
     let name : String?
     let intRange : Int?
     let doubleRange : Double?
+    let imageName : String?
 }
 
 

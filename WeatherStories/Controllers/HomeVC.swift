@@ -38,6 +38,11 @@ class HomeVC: UIViewController,CLLocationManagerDelegate, UICollectionViewDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         
+ 
+
+        
+        
+        
         //TableView Delegate
         dailyWeatherTable.dataSource = self
         
@@ -92,6 +97,12 @@ extension HomeVC: UITableViewDataSource{
        
         cell.updateCell(obj: dailyObj!,index:indexPath.row)
         
+        
+        
+        
+        
+        
+            
         return cell
     }
     
@@ -101,13 +112,12 @@ extension HomeVC: UITableViewDataSource{
 
 extension HomeVC:UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 2
+        return 8
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionCell", for: indexPath) as! CustomCollectionViewCell
         cell.collectionCellConfigure(indexNum: indexPath.row)
-        
         
         
         return cell
