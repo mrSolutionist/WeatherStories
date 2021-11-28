@@ -20,12 +20,12 @@
 		BCAB688F273285DB0084057F /* DailyWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAB688E273285DB0084057F /* DailyWeatherModel.swift */; };
 		BCAB6892273286050084057F /* DailyApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAB6891273286050084057F /* DailyApi.swift */; };
 		BCAB68942732C8480084057F /* TableWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAB68932732C8480084057F /* TableWeatherModel.swift */; };
+		BCB454BF2753D35200D53237 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCD303F3272D741000250513 /* Assets.xcassets */; };
 		BCB6843627391EA600A38356 /* CollectionView Components Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB6843527391EA600A38356 /* CollectionView Components Model.swift */; };
 		BCD303E8272D740F00250513 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD303E7272D740F00250513 /* AppDelegate.swift */; };
 		BCD303EA272D740F00250513 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD303E9272D740F00250513 /* SceneDelegate.swift */; };
 		BCD303EF272D740F00250513 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCD303ED272D740F00250513 /* Main.storyboard */; };
 		BCD303F2272D740F00250513 /* WeatherStories.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BCD303F0272D740F00250513 /* WeatherStories.xcdatamodeld */; };
-		BCD303F4272D741000250513 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCD303F3272D741000250513 /* Assets.xcassets */; };
 		BCD303F7272D741000250513 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCD303F5272D741000250513 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -208,8 +208,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCD303F7272D741000250513 /* LaunchScreen.storyboard in Resources */,
-				BCD303F4272D741000250513 /* Assets.xcassets in Resources */,
 				BCA715B4272F122B00646EA2 /* pexels-taryn-elliott-8549517.mp4 in Resources */,
+				BCB454BF2753D35200D53237 /* Assets.xcassets in Resources */,
 				BCD303EF272D740F00250513 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -383,14 +383,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5S8HZ77935;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WeatherStories/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = allow;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -402,7 +405,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -411,14 +414,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5S8HZ77935;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WeatherStories/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = allow;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -430,7 +436,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
