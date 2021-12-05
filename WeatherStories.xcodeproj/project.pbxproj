@@ -210,6 +210,7 @@
 		BCD303E6272D740F00250513 /* WeatherStories */ = {
 			isa = PBXGroup;
 			children = (
+				BCE16A59275CA471007BA43D /* WeatherStories */,
 				BC8763552736C6A5009D5FEE /* Delegate */,
 				BCA715B3272F122B00646EA2 /* pexels-taryn-elliott-8549517.mp4 */,
 				BCD303ED272D740F00250513 /* Main.storyboard */,
@@ -219,7 +220,6 @@
 				BCD303F5272D741000250513 /* LaunchScreen.storyboard */,
 				BCD303F8272D741000250513 /* Info.plist */,
 				BCD303F0272D740F00250513 /* WeatherStories.xcdatamodeld */,
-				BCE16A59275CA471007BA43D /* WeatherStories */,
 			);
 			path = WeatherStories;
 			sourceTree = "<group>";
