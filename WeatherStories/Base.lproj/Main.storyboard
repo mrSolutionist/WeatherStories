@@ -93,7 +93,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="900"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="After Noon" translatesAutoresizingMaskIntoConstraints="NO" id="gj5-kn-C4R">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Night" translatesAutoresizingMaskIntoConstraints="NO" id="gj5-kn-C4R">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="900"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aml-s5-Jjd">
@@ -389,7 +389,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="After Noon" width="375" height="667"/>
+        <image name="Night" width="375" height="667"/>
         <image name="clear-day" width="64" height="64"/>
         <image name="partly-cloudy-day-haze" width="64" height="64"/>
     </resources>
